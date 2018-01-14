@@ -1,4 +1,7 @@
 const state = {
-  routerList: []// 导航路由
+  // 面包屑
+  routerList: [],
+  // 用户信息
+  userInfo: {}
 }
 export default state
