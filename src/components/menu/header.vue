@@ -44,8 +44,7 @@
         ]
       }
     },
-    computed: {
-    },
+    computed: {},
     methods: {
       handleSelect (key, keyPath) {
         console.log(key, keyPath)
@@ -69,6 +68,14 @@
     .el-menu {
       .el-menu-item, .el-submenu {
         float: right;
+      }
+    }
+    .el-menu--horizontal{
+      .el-submenu{
+        .el-menu{
+          left: unset;
+          right: 0;
+        }
       }
     }
   }

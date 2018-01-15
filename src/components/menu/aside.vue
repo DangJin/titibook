@@ -42,6 +42,7 @@
 </template>
 
 <script>
+  import $ from 'jquery'
   export default {
     name: 'Aside',
     data () {
@@ -88,7 +89,11 @@
           return a + '-' + b + '-' + c
         }
       }
+    },
+    mounted: function () {
+      $('.el-menu-vertical-demo').css('minHeight', document.documentElement.clientHeight - 60)
     }
+
   }
 </script>
 
