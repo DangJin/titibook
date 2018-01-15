@@ -78,9 +78,18 @@
       .el-container {
         .el-aside {
           width: 20%;
+          height: 100%;
         }
         .el-main {
           width: 80%;
+          padding: 10px 15px;
+          .el-breadcrumb {
+            height: 34px;
+            line-height: 34px;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            background-color: #eee;
+          }
         }
       }
     }
