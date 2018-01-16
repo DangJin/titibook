@@ -1,7 +1,7 @@
 <template>
-<div>
-  home
-</div>
+  <div id="home">
+    home
+  </div>
 </template>
 
 <script>
@@ -11,6 +11,8 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss">
+  #home {
 
+  }
 </style>

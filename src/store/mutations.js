@@ -1,7 +1,7 @@
 import {
   UPP_ROUTE,
-  GET_USERINFO,
-  UPP_USERINFO
+  SET_TOKEN,
+  UPP_TOKEN
 } from './mutation-types'
 
 export default {
@@ -9,9 +9,10 @@ export default {
   [UPP_ROUTE] (state, route) {
     state.routerList = route
   },
-  [GET_USERINFO] (state, user) {
-    state.userInfo = user
+  [SET_TOKEN] (state, token) {
+    state.token = token
   },
-  [UPP_USERINFO] (state, user) {
+  [UPP_TOKEN] (state, accessToken) {
+    state.token.access_token = accessToken
   }
 }

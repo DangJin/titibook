@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div id="index">
     <el-container>
       <el-header>
         <Header></Header>
@@ -20,7 +20,6 @@
     </el-container>
   </div>
 </template>
-
 <script>
   import Header from '../components/menu/header'
   import Aside from '../components/menu/aside'
@@ -65,7 +64,7 @@
 </script>
 
 <style lang="scss">
-  .index {
+  #index {
     .el-container {
       .el-header {
         padding: 0;
