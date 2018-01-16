@@ -49,7 +49,7 @@
                      icon="el-icon-circle-check-outline">保存
           </el-button>
           <el-button v-else type="primary" @click='handleUpdate(scope.row)' size="mini"
-          icon="el-icon-edit">编辑
+                     icon="el-icon-edit">编辑
           </el-button>
           <el-button v-if="scope.row.status == 1" type="success" @click='scope.row.status = 2' size="mini"
                      icon="el-icon-edit">发布
@@ -88,7 +88,7 @@
         <el-button v-else type="primary" @click="confirmEdit">保存</el-button>
       </div>
     </el-dialog>
-<!--查看-->
+    <!--查看-->
     <el-dialog title="查看" :visible.sync="dialogTableVisible">
       <el-table :data="handleLookData">
         <el-table-column property="name" label="姓名" width="150"></el-table-column>
@@ -98,8 +98,6 @@
     </el-dialog>
   </div>
 </template>
-
-
 <script>
   import Sortable from 'sortablejs'
 
@@ -359,23 +357,26 @@
 </script>
 
 <style scoped>
-  .operations{
+  .operations {
     float: left;
     width: 100%;
     margin-bottom: 15px;
   }
-  .operations button{
+
+  .operations button {
     width: 80px;
     height: 34px;
     padding: 0;
     line-height: 34px;
     text-align: center;
   }
+
   .sortable-ghost {
     opacity: 0.8;
     color: #fff !important;
     background: #42b983 !important;
   }
+
   .icon-star {
     margin-right: 2px;
   }
