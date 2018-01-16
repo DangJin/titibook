@@ -87,6 +87,7 @@
             line-height: 34px;
             margin-bottom: 10px;
             padding-left: 15px;
+            border-radius: 4px;
             background-color: #eee;
           }
         }
