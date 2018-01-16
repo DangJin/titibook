@@ -7,7 +7,7 @@
     </div>
     <el-table :data="list" row-key="id" border fit highlight-current-row style="width: 100%"
               :default-sort="{prop: 'date', order: 'descending'}">
-      <el-table-column align="center" prop="id" class-name="drag-handle" sortable label="序号" width="65">
+      <el-table-column align="center" prop="id" class-name="drag-handle" sortable label="序号" width="90">
         <template slot-scope="scope">
           <span>{{ scope.row.id }}</span>
         </template>
@@ -33,7 +33,7 @@
                        @click="cancelEdit(scope.row)">取消
             </el-button>
           </template>
-          <span v-else @click="handleLook(scope.row)">{{ scope.row.address }}</span>
+          <span v-else @click="handleLook(scope.row)" style="color: rgb(40,170,250)">{{ scope.row.address }}</span>
         </template>
       </el-table-column>
 
