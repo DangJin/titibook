@@ -1,8 +1,13 @@
-import axios from 'axios'
-import qs from 'qs'
+import request from '../index'
 
-import { root } from '../index'
+export const getCsrf = () => {
+  return request.fetchGet('getcsrf')
+}
 
-export const refreshToke = (params) => {
-  return axios.get(root + 'admin/login', qs.stringify(params))
+export const refresh = () => {
+  return request.fetchGet('refresh')
+}
+
+export const uploadFile = (params) => {
+  return request.fetchPost('imgs/add', params)
 }

@@ -114,7 +114,7 @@
               }
             }).catch(errors => {
               this.$notify.error({
-                title: '失败',
+                title: '错误',
                 message: errors
               })
             })
@@ -153,7 +153,7 @@
         height: 100%;
         .box-card {
           height: 100%;
-          width: 25%;
+          width: 450px;
           margin: 0 auto;
           top: 300px;
           h1 {

@@ -1,8 +1,5 @@
-import axios from 'axios'
-import qs from 'qs'
-
-import { root } from '../index'
+import request from '../index'
 
 export const login = (params) => {
-  return axios.post(root + 'admin/login', qs.stringify(params))
+  return request.fetchPost('login', params)
 }

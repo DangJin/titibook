@@ -14,7 +14,8 @@
             <el-breadcrumb-item :to="{ path: bre.path }" v-for="(bre,index) in routerList" :key="index">{{bre.name}}
             </el-breadcrumb-item>
           </el-breadcrumb>
-          <router-view/>
+            <router-view>
+            </router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -76,11 +77,11 @@
       }
       .el-container {
         .el-aside {
-          width: 20%;
+          width: 10%;
           height: 100%;
         }
         .el-main {
-          width: 80%;
+          width: 90%;
           padding: 10px 15px;
           .el-breadcrumb {
             height: 34px;

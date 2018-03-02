@@ -1,7 +1,6 @@
 import {
   UPP_ROUTE,
-  SET_TOKEN,
-  UPP_TOKEN
+  UPP_CSRF
 } from './mutation-types'
 
 export default {
@@ -9,10 +8,8 @@ export default {
   [UPP_ROUTE] (state, route) {
     state.routerList = route
   },
-  [SET_TOKEN] (state, token) {
-    state.token = token
-  },
-  [UPP_TOKEN] (state, accessToken) {
-    state.token.access_token = accessToken
+  // 更新表单令牌
+  [UPP_CSRF] (state, csrf) {
+    state.csrf = csrf
   }
 }
